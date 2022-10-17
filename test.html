@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+     
+    </style>
+<body>
+    <button onclick="chageColor()">배경색 변경하기</button>
+    <script>    
+
+        const value = '';
+    
+        for (let i = 0 ; i<2; i++){
+            
+        }
+
+        if(value == 1){
+               //밝음
+                value = 'off';
+                console.log(value);
+            }else if(value == 2){
+                value = 'on'; //어두움
+                console.log(value);
+            }else{
+                console('~_~');
+            } 
+
+        function chageColor (){
+            if (value == 0){
+            document.querySelector('body').style.backgroundColor="wheat";
+        }else if(value == 1){
+            document.querySelector('body').style.backgroundColor="gray";
+        }else{
+            console.log("^_^");
+        }
+           
+        }
+    </script>    
+</body>
+</html>
