@@ -13,33 +13,49 @@
     <button onclick="chageColor()">배경색 변경하기</button>
     <script>    
 
-        const value = '';
-    
-        for (let i = 0 ; i<2; i++){
-            
-        }
+        let value = JSON.Parse(localStorage.getItem('value'))??[];
+        let x = 0;
 
-        if(value == 1){
-               //밝음
-                value = 'off';
-                console.log(value);
-            }else if(value == 2){
-                value = 'on'; //어두움
-                console.log(value);
-            }else{
-                console('~_~');
-            } 
+    
+        // if(i == 1){
+        //        //밝음
+        //         value = 'off';
+              
+                
+        //     }else if(i == 2){
+        //         value = 'on'; //어두움
+        //         console.log(value);
+                
+        //     }else {
+        //         break;
+        //     }
+        
+        
 
         function chageColor (){
-            if (value == 0){
-            document.querySelector('body').style.backgroundColor="wheat";
-        }else if(value == 1){
-            document.querySelector('body').style.backgroundColor="gray";
-        }else{
-            console.log("^_^");
+
+            while(x < 2 ){
+             
+             x++;
+             x = x + 1 ;
+             console.log(x);
+             if(x === 1 ){
+                value.push()
+                document.querySelector('body').style.backgroundColor="wheat";
+             }else if (x === 2){
+                
+                value.push()
+                 document.querySelector('body').style.backgroundColor="gray";
+             }else{
+            x =  '';
+            value.slice()
+            
+          
         }
            
         }
+    }
+       
     </script>    
 </body>
 </html>
