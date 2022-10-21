@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+        font-family: 'Silkscreen', cursive;
+    }
+    /* point color 862954 
+        regular color 3B3A3A
+        window screen color 6A5112
+        outline shadow color #635D67
+    */
+
+    body{
+        background-color: #333;
+        font-weight: 600;
+        font-size: 20px;
+        text-align: center;
+    }
+    .wrap{
+        width:100%;
+        height:100vh;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .calculator{
+        padding:10px;
+        width:293px;
+        height:440px;
+        background-color: #a89c97;
+        border-radius: 5px;
+    }
+    .result{
+        margin: 10px;
+        width:250px;
+        height:60px;
+        background-color: #2A6133;
+        line-height: 60px;
+        font-size:25px;
+    }
+    
+    .btn{
+        width:60px;
+        height:60px;
+        line-height: 60px;
+        display:inline-block;
+        background-color:rgb(218, 215, 211);
+        cursor:pointer;
+        margin-top: 5px;
+        color:#0C1A73;
+    }
+
+    
+        .operator{
+            background-color:#333;
+            color:rgb(218, 215, 211);
+        }
+
+        .round{
+            border-radius: 50%;
+        }
+     
+        
+</style>
+
+<body>
+    
+    <div class="wrap">
+
+    <div class="calculator">
+        <div class="output">
+        <div class="current"></div>
+        <div class="result"></div>
+    </div>
+        <div class="clear">
+            <div class="btn soft_reset"style="background-color:#5a5a5a; color:rgb(218, 215, 211);">CE</div>
+            <div class="btn all_reset" style="background-color:#5a5a5a; color:rgb(218, 215, 211);">AC</div>
+            <div class="btn delete" style="background-color:#5a5a5a; color:rgb(218, 215, 211);"> <-</div>
+            <div class="btn enter round"style="background-color:#862954;border:none;color:rgb(218, 215, 211);">=</div>
+        </div>
+            
+            <div class="btn num">7</div>
+            <div class="btn num">8</div>
+            <div class="btn num">9</div>
+            <div class="btn operator">/</div>
+
+            <div class="btn num">4</div>
+            <div class="btn num">5</div>
+            <div class="btn num">6</div>
+            <div class="btn operator">x</div>
+
+            <div class="btn num">1</div>
+            <div class="btn num">2</div>
+            <div class="btn num">3</div>
+            <div class="btn operator">+</div>
+
+            <div class="btn sign">+/-</div>
+            <div class="btn num">0</div>
+            <div class="btn decimal">.</div>
+            <div class="btn operator">-</div>
+            
+        
+      
+        </div>
+        
+   
+</div>
+<script src="calculator.js"></script>
+</body>
+</html>
